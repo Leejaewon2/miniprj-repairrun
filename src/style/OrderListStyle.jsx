@@ -9,43 +9,73 @@ const OrderListComp = styled.div`
     .orderHeader {
       .orderBox {
         .couponBox {
-          /* display: flex; */
-          width: auto;
           .orderContainer {
-            /* display: flex; */
-            .orderBoder {
-              background-color: var(--DARKBLUE);
-              border-radius: 15px;
-              font-size: 1.4em;
-              padding: 0 0 5% 0;
-              margin: 30px 0 50px 0;
-              h3 {
-                /* position: absolute; */
-                /* background-color: gray; */
-                width: 80%;
-                color: white;
-                font-weight: 600;
-                padding-bottom: 5%;
-              }
-              .orderComp {
-                font-size: 1.1em;
-                padding: 10px 40%;
-                display: flex;
-                margin-bottom: 30px;
-                color: white;
+            display: flex;
+            /* flex-direction: column; */
+            /* background-color: yellow; */
 
+            .orderBoder {
+              display: flex;
+              background-color: var(--MIDBLUE);
+              width: 100%;
+              margin: 30px 0;
+              padding-bottom: 50px;
+              border-radius: 20px;
+              .ordersecBorder1 {
+                /* background-color: gray; */
+                flex-grow: 1;
+              }
+              h2 {
+                color: white;
+                margin-left: 5px;
+                padding: 30px 0 30px 0;
+                font-weight: 600;
+              }
+              .orderImgBorder {
+                width: 80%;
+                padding-bottom: 80%;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                margin-left: 30px;
+                img {
+                  width: 100%;
+                  position: absolute;
+                }
+              }
+            }
+            .ordersecBorder2 {
+              white-space: nowrap;
+              flex-grow: 9;
+              font-size: 1.9em;
+              padding-top: 16%;
+              .orderComp {
+                color: white;
+                display: flex;
+                margin-bottom: 40px;
                 .orderTitle {
-                  /* background-color: red; */
-                  outline: 1px solid black;
                   color: white;
-                  width: 1000px;
                   font-weight: 600;
-                  width: 600px;
-                  white-space: nowrap;
                 }
-                p {
-                  width: 500px;
-                }
+              }
+              p {
+                color: white;
+              }
+            }
+            button {
+              margin: 10px;
+              border: none;
+              letter-spacing: 1.4px;
+              font-size: 1.3em;
+              padding: 15px 24px;
+              border-radius: 5px;
+              background-color: var(--LIGHTBLUE);
+              cursor: pointer;
+              transition: 0.3s ease-in;
+              &:hover {
+                color: white;
+                background-color: var(--DARKBLUE);
               }
             }
           }
