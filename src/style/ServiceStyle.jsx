@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
-const NoticeComp = styled.div`
+const ServiceComp = styled.div`
   .container {
-    outline: 1px solid red;
     padding: 60px 0;
+    padding-bottom: 130px;
     .noticeHeader {
       margin-bottom: 100px;
       font-weight: 600;
     }
     .noticeMap {
+      width: 80%;
+      margin: 0 auto;
       li {
         position: relative;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--GREY);
         font-weight: 600;
         font-size: 1.3rem;
         padding-bottom: 10px;
@@ -20,6 +22,8 @@ const NoticeComp = styled.div`
           margin-top: 20px;
           justify-content: space-between;
           .noticeDateBox {
+            color: #ccc;
+            font-size: 1.1rem;
             padding-right: 25px;
           }
         }
@@ -28,8 +32,9 @@ const NoticeComp = styled.div`
           transition: 0.4s ease-in;
           overflow: hidden;
           height: 0;
-
           padding: 0;
+          line-height: 1.6;
+          font-size: 0.8em;
           &.active {
             overflow: visible;
             height: auto;
@@ -37,16 +42,17 @@ const NoticeComp = styled.div`
           }
           p {
             margin: 0 auto;
-            width: 1000px;
+            width: 80%;
             flex-wrap: wrap;
             border-radius: 10px;
             background-color: var(--GREY);
-            padding: 15px;
+            padding: 20px;
           }
         }
       }
 
       svg {
+        color: var(--GREY);
         position: absolute;
         top: 0;
         right: 0;
@@ -56,4 +62,4 @@ const NoticeComp = styled.div`
   }
 `;
 
-export default NoticeComp;
+export default ServiceComp;
