@@ -1,7 +1,8 @@
+import OrderImg from "../component/OrderImg";
 const OrderInfo = () => {
   return (
     <>
-      <div>OrderInfo!</div>
+      <OrderImg />
     </>
   );
 };

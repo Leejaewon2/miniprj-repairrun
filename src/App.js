@@ -48,7 +48,10 @@ function App() {
               {/* 마이페이지 */}
               <Route path="/MyPage" element={<MyPage />} />
               <Route path="/MyPage/UpdateInfo" element={<UpdateInfo />} />
-              <Route path="/MyPage/OrderInfo" element={<OrderInfo />} />
+              <Route
+                path="/MyPage/OrderInfo/:orderNumber"
+                element={<OrderInfo />}
+              />
               <Route path="/MyPage/MyReview" element={<MyReview />} />
               {/************** 파트너회원 *****************/}
               <Route path="/PartnerMain" element={<PartnerMain />} />

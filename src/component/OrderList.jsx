@@ -1,6 +1,7 @@
 import OrderListComp from "../style/OrderListStyle";
 import { Link } from "react-router-dom";
 import OrderImgSwiper from "../util/OrderImgSwiper";
+
 const Order = ({ e }) => {
   return (
     <>
@@ -32,11 +33,15 @@ const Order = ({ e }) => {
               <p>{e.requestDate}</p>
             </div>
           </div>
-          <Link to="/MyPage/OrderInfo">
-            <div className="orderBtn">
+
+          <div className="orderBtn">
+            <Link
+              to={`/MyPage/OrderInfo/${e.orderNumber}`}
+              style={{ textDecoration: "none" }}
+            >
               <button>자세히</button>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
     </>
